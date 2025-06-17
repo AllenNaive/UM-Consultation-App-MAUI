@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UM_Consultation_App_MAUI.Views.CreateAccountPage">
+    
+    <!--Polish nalang kulang especially sa textfield-->
+    
+    <VerticalStackLayout Padding="40" Spacing="20" HorizontalOptions="Center">
+
+        <!-- App Logo & Title -->
+        <Image Source="logofinal.png"
+               WidthRequest="350"
+               HorizontalOptions="Center"
+               Margin="0,70,0,0"/>
+
+        <Label Text="Create Account"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#707070" />
+
+        <!-- Email Input -->
+        <Frame CornerRadius="45" BorderColor="Transparent" BackgroundColor="#eeeeee"
+               HeightRequest="80" WidthRequest="320">
+            <Entry Placeholder="Faculty or Student Email" 
+                   FontAttributes="Bold"/>
+        </Frame>
+
+        <!-- Password Input -->
+        <Frame CornerRadius="45" BorderColor="Transparent" BackgroundColor="#eeeeee"
+               HeightRequest="80" WidthRequest="320">
+            <HorizontalStackLayout>
+                <Entry Placeholder="Password"
+                       IsPassword="True"
+                       BackgroundColor="Transparent"
+                       WidthRequest="279" />
+                <ImageButton Source="eye_icon.png"
+                             WidthRequest="25"
+                             HeightRequest="25" />
+                <!-- wala pay icon dri, sample name rana -->
+            </HorizontalStackLayout>
+        </Frame>
+
+        <!-- Confirm Password Input -->
+        <Frame CornerRadius="45" BorderColor="Transparent" BackgroundColor="#eeeeee"
+               HeightRequest="80" WidthRequest="320">
+            <HorizontalStackLayout>
+                <Entry Placeholder="Password"
+                       IsPassword="True"
+                       BackgroundColor="Transparent"
+                       FontAttributes="Bold"
+                       WidthRequest="279" />
+                <ImageButton Source="eye_icon.png"
+                             WidthRequest="25"
+                             HeightRequest="25" />
+                <!-- wala pay icon dri, sample name rana -->
+            </HorizontalStackLayout>
+        </Frame>
+        
+        <!-- Sign Up Button -->
+        <Button Text="Sign Up"
+                BackgroundColor="#b61c1c"
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="50"
+                HeightRequest="55"
+                WidthRequest="300" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UM_Consultation_App_MAUI.Views.Common.MenuPage"
+             Title="Settings">
+    <!--heavily need ug polish-->
+    <Grid RowDefinitions="*,Auto" Padding="20">
+
+        <!-- Assign VerticalStackLayout to First Row -->
+        <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="15">
+            <!-- Header -->
+            <Frame BackgroundColor="Red" Padding="15">
+                <Label Text="Settings"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <!-- Account Management Section -->
+            <Label Text="Account Management"
+               FontSize="20"
+               FontAttributes="Bold"/>
+
+            <Grid Padding="10" ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Name:" FontAttributes="Bold"/>
+                <Label Text="{Binding Name}" Grid.Column="1"/>
+
+                <Label Text="Email/Username:" FontAttributes="Bold" Grid.Row="1"/>
+                <Label Text="{Binding Email}" Grid.Column="1" Grid.Row="1"/>
+
+                <Label Text="Password:" FontAttributes="Bold" Grid.Row="2"/>
+                <Label Text="{Binding Password}" Grid.Column="1" Grid.Row="2"/>
+            </Grid>
+
+            <!-- Change Password Option -->
+            <Label Text="Change Password"
+               TextColor="Purple"
+               FontSize="16"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               Padding="5"/>
+
+            <!-- Logout Option -->
+            <Button Text="Logout"
+                BackgroundColor="Transparent"
+                TextColor="Red"
+                FontAttributes="Bold"
+                BorderWidth="0"
+                HorizontalOptions="Start"/>
+        </VerticalStackLayout>
+
+        <!-- Bottom Navigation Bar -->
+        <ContentView x:Name="BottomNavContainer"/>
+
+    </Grid>
+
+
+
+</ContentPage>

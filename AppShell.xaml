@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="UM_Consultation_App_MAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:view="clr-namespace:UM_Consultation_App_MAUI.Views.StudentView"
+    xmlns:common="clr-namespace:UM_Consultation_App_MAUI.Views.Common"
+    xmlns:local="clr-namespace:UM_Consultation_App_MAUI"
+    Shell.FlyoutBehavior="Disabled"
+    Title="UM_Consultation_App_MAUI">
+
+    
+    <ShellContent Route="HomePage" ContentTemplate="{DataTemplate view:HomePage}" />
+    <ShellContent Route="RequestPage" ContentTemplate="{DataTemplate view:RequestPage}" />
+    <ShellContent Route="ResponsePage" ContentTemplate="{DataTemplate view:ResponsePage}" />
+    <ShellContent Route="MenuPage" ContentTemplate="{DataTemplate common:MenuPage}" />
+
+</Shell>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UM_Consultation_App_MAUI.LoginPage"
+             BackgroundColor="#ffffff">
+    
+    <!-- Polish nalang kulang especially sa textfield -->
+    
+    <VerticalStackLayout Padding="30" Spacing="10" VerticalOptions="Center">
+
+        <!-- Logo and App Name -->
+        <Image Source="logofinal.png"
+               WidthRequest="350"
+               HorizontalOptions="Center"
+               Margin="0, -70, 0, 0"/>
+        <Label Text="Main Campus"
+               FontSize="19"
+               HorizontalOptions="Center"
+               TextColor="#969696"/>
+
+        <!-- Greeting -->
+        <Label Text="Maayong Adlaw, Ga!"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,80,0,0" />
+        <!-- Email -->
+        <Frame CornerRadius="45" BorderColor="Transparent" BackgroundColor="#eeeeee"
+               HeightRequest="80" WidthRequest="320">
+            <Entry Placeholder="Faculty or Student Email"
+                   BackgroundColor="Transparent"
+                   FontAttributes="Bold" />
+        </Frame>
+
+
+        <!-- Password -->
+        <Frame CornerRadius="45" BorderColor="Transparent" BackgroundColor="#eeeeee"
+               HeightRequest="80" WidthRequest="320">
+            <HorizontalStackLayout>
+                <Entry Placeholder="Password"
+                       IsPassword="True"
+                       BackgroundColor="Transparent"
+                       WidthRequest="279" />
+                <!-- <ImageButton Source="eye_icon.png" WidthRequest="25" HeightRequest="25" /> -->
+                <!--wala pay image source dri-->
+            </HorizontalStackLayout>
+        </Frame>
+
+
+        <!-- Forgot Password -->
+        <Label Text="Forgot Password?"
+               TextColor="Blue"
+               FontSize="13"
+               HorizontalOptions="End" />
+
+        <!-- Login Button -->
+        <Button Text="Log In"
+                FontSize="18"
+                BackgroundColor="#b61c1c"
+                TextColor="White"
+                CornerRadius="50"
+                HeightRequest="55"
+                WidthRequest="300"/>
+
+        <!-- Create Account Button -->
+        <Button Text="Create Account"
+                BackgroundColor="Transparent"
+                BorderColor="#b61c1c"
+                BorderWidth="2"
+                TextColor="#b61c1c"
+                CornerRadius="50"
+                HeightRequest="55"
+                WidthRequest="300"/>
+    </VerticalStackLayout>
+
+</ContentPage>
