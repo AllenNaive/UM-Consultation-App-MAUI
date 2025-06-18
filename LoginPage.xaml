@@ -25,22 +25,29 @@
                HorizontalOptions="Center"
                Margin="0,80,0,0" />
         <!-- Email -->
-        <Frame CornerRadius="45" BorderColor="Transparent" BackgroundColor="#eeeeee"
-               HeightRequest="80" WidthRequest="320">
+        <Frame CornerRadius="30" BorderColor="Transparent" BackgroundColor="#eeeeee"
+               HeightRequest="78" WidthRequest="320">
             <Entry Placeholder="Faculty or Student Email"
                    BackgroundColor="Transparent"
-                   FontAttributes="Bold" />
+                   />
         </Frame>
 
 
         <!-- Password -->
-        <Frame CornerRadius="45" BorderColor="Transparent" BackgroundColor="#eeeeee"
-               HeightRequest="80" WidthRequest="320">
+        <Frame CornerRadius="30" BorderColor="Transparent" BackgroundColor="#eeeeee"
+               HeightRequest="78" WidthRequest="320">
             <HorizontalStackLayout>
-                <Entry Placeholder="Password"
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Password"
                        IsPassword="True"
                        BackgroundColor="Transparent"
                        WidthRequest="279" />
+                <ImageButton x:Name="TogglePasswordButton"
+                             Source="eyeclosed.png"
+                             BackgroundColor="Transparent"
+                             WidthRequest="25"
+                             HeightRequest="25"
+                             Clicked="OnTogglePasswordClicked"/>
                 <!-- <ImageButton Source="eye_icon.png" WidthRequest="25" HeightRequest="25" /> -->
                 <!--wala pay image source dri-->
             </HorizontalStackLayout>
@@ -49,9 +56,10 @@
 
         <!-- Forgot Password -->
         <Label Text="Forgot Password?"
-               TextColor="Blue"
+               TextColor="#554E4E"
                FontSize="13"
-               HorizontalOptions="End" />
+               HorizontalOptions="End" 
+               FontAttributes="Bold" />
 
         <!-- Login Button -->
         <Button Text="Log In"

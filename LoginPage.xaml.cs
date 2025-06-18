@@ -7,4 +7,9 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private void OnTogglePasswordClicked(object sender, EventArgs e)
+    {
+        PasswordEntry.IsPassword = !PasswordEntry.IsPassword;
+        TogglePasswordButton.Source = PasswordEntry.IsPassword ? "eyeclosed.png" : "eyeopen.png";
+    }
 }
