@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-             xmlns:local="clr-namespace:UM_Consultation_App_MAUI.Views.StudentView"  
+             xmlns:local="clr-namespace:UM_Consultation_App_MAUI.Views.StudentView"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
              x:Class="UM_Consultation_App_MAUI.Views.StudentView.RequestPage"  
-             BackgroundColor="#ffffff">  
-    
+             BackgroundColor="#ffffff">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#8c221e" />
+    </Page.Behaviors>
     <!--daghan restrictions/limitation but this is the best ive got-->  
     <!--polish nalang kulang-->  
     <Grid RowDefinitions="*, Auto">  
