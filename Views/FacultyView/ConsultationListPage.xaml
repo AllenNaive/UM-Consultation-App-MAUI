@@ -3,39 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              xmlns:local="clr-namespace:UM_Consultation_App_MAUI.Views.FacultyView"  
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
-             x:Class="UM_Consultation_App_MAUI.Views.FacultyView.ConsultationListPage">
+             x:Class="UM_Consultation_App_MAUI.Views.FacultyView.ConsultationListPage"
+             Title="">
 
     <Page.Behaviors>
         <mct:StatusBarBehavior StatusBarColor="#8c221e" />
     </Page.Behaviors>
 
-    <Grid RowDefinitions="*, Auto">
-        <VerticalStackLayout Padding="20" Spacing="20">
-            <!-- Title -->
-            <Label Text="Requests"  
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <!-- Title -->
+        <Label Text="Consulation List"  
            FontSize="24"  
            FontAttributes="Bold"  
            TextColor="black"  
            HorizontalOptions="Start" />
 
-            <Grid ColumnDefinitions="2*, 1" Padding="5">
-                <Label Text="Details"  
+        <Grid ColumnDefinitions="2*, 1" Padding="5">
+            <Label Text="Details"  
                FontSize="16"  
                FontAttributes="Bold"  
                TextColor="Black"  
                HorizontalOptions="Start" />
 
-                <Label Text="Status"  
+            <Label Text="Status"  
                FontSize="16"  
                FontAttributes="Bold"  
                TextColor="Black"  
                HorizontalOptions="End"/>
-            </Grid>
-        </VerticalStackLayout>
-
-        <ContentView Grid.Row="1">
-            <local:FacultyBottomNav />
-        </ContentView>
-
-    </Grid>
+        </Grid>
+    </VerticalStackLayout>
 </ContentPage>

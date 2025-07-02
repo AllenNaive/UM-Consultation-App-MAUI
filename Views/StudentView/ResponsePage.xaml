@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:UM_Consultation_App_MAUI.Views.StudentView" 
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
-             x:Class="UM_Consultation_App_MAUI.Views.StudentView.ResponsePage">
+             x:Class="UM_Consultation_App_MAUI.Views.StudentView.ResponsePage"
+             Title="">
 
     <Page.Behaviors>
         <mct:StatusBarBehavior StatusBarColor="#8c221e" />
     </Page.Behaviors>
 
-    <Grid RowDefinitions="*, Auto">
-        <VerticalStackLayout Padding="20" Spacing="15">
+    <VerticalStackLayout Padding="20" Spacing="15">
 
         <Label Text="Consultation Responses"
                FontSize="24"
                FontAttributes="Bold"
                TextColor="Black"
                HorizontalOptions="Center"/>
-        
-        
+
+
         <Picker Title="All"
                 TitleColor="Black"
                 SelectedIndex="0"
@@ -65,12 +65,5 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        </VerticalStackLayout>
-
-        <ContentView>
-            <local:StudentBottomNav />
-        </ContentView>
-        
-    </Grid>
-
+    </VerticalStackLayout>
 </ContentPage>

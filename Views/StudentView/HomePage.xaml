@@ -4,13 +4,13 @@
              xmlns:local="clr-namespace:UM_Consultation_App_MAUI.Views.StudentView"  
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
              x:Class="UM_Consultation_App_MAUI.Views.StudentView.HomePage"  
-             Background="#ffffff">
+             Background="#ffffff"
+             Title="">
 
     <Page.Behaviors>
         <mct:StatusBarBehavior StatusBarColor="#8c221e" />
     </Page.Behaviors>
-
-    <Grid RowDefinitions="*, Auto">  
+  
         <VerticalStackLayout  
             Padding="30,0"  
             Spacing="10">  
@@ -96,9 +96,4 @@
             </Frame>  
 
         </VerticalStackLayout>  
-
-        <ContentView>  
-            <local:StudentBottomNav />  
-        </ContentView>  
-    </Grid>  
 </ContentPage>

@@ -3,13 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              xmlns:local="clr-namespace:UM_Consultation_App_MAUI.Views.FacultyView"  
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
-             x:Class="UM_Consultation_App_MAUI.Views.FacultyView.RequestListPage">
+             x:Class="UM_Consultation_App_MAUI.Views.FacultyView.RequestListPage"
+             Title="">
 
     <Page.Behaviors>
         <mct:StatusBarBehavior StatusBarColor="#8c221e" />
     </Page.Behaviors>
-
-    <Grid RowDefinitions="*, Auto">
 
         <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="20">
             <!-- Title -->
@@ -46,15 +45,15 @@
                     <!-- Request Details -->
                     <VerticalStackLayout>
                         <!-- sample -->
-                    <Label Text="Request #7599"  
+                        <Label Text="Request #7599"  
                            FontSize="16"  
                            FontAttributes="Bold"  
-                           TextColor="Black"/>  
-  
-                    <Label Text="CPE 223 - Jeanelle Labsan"  
+                           TextColor="Black"/>
+
+                        <Label Text="CPE 223 - Jeanelle Labsan"  
                            FontSize="14"  
-                           TextColor="Gray"/>  
-                    
+                           TextColor="Gray"/>
+
                     </VerticalStackLayout>
 
                     <!-- Action Buttons -->
@@ -70,9 +69,4 @@
                 </HorizontalStackLayout>
             </Border>
         </VerticalStackLayout>
-
-        <ContentView Grid.Row="1">
-            <local:FacultyBottomNav />
-        </ContentView>
-    </Grid>
 </ContentPage>

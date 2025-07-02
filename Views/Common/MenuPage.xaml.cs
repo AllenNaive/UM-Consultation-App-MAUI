@@ -9,15 +9,6 @@ public partial class MenuPage : ContentPage
 	public MenuPage()
 	{
 		InitializeComponent();
-        BindingContext = new MenuViewModel();
-        if (UserSession.IsFaculty)
-        {
-            BottomNavContainer.Content = new FacultyBottomNav();
-        }
-        else
-        {
-            BottomNavContainer.Content = new StudentBottomNav();
-        }
     }
     // Migration from Benny
     // feel free to modify this backend team

@@ -53,7 +53,7 @@
                              WidthRequest="25"
                              HeightRequest="25"
                              Clicked="OnTogglePasswordClicked"/>
-                <!-- <ImageButton Source="eye_icon.png" WidthRequest="25" HeightRequest="25" /> -->
+                <!-- <ImageButton Source="eyeopen.png" WidthRequest="25" HeightRequest="25" /> -->
                 <!--wala pay image source dri-->
             </HorizontalStackLayout>
         </Frame>

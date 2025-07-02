@@ -158,8 +158,5 @@
                     FontAttributes="Bold"
                     CornerRadius="20"/>
         </HorizontalStackLayout>
-
-
     </VerticalStackLayout>
-
 </ContentPage>
