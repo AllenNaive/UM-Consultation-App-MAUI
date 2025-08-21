@@ -112,6 +112,7 @@
         <!-- Create Account Button -->
         <Button Text="Create Account"
                 BackgroundColor="Transparent"
+                Command="{Binding CreateAccountCommand}"
                 BorderColor="#b61c1c"
                 BorderWidth="2"
                 TextColor="#b61c1c"

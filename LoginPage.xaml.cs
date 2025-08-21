@@ -1,4 +1,6 @@
 
+using UM_Consultation_App_MAUI.ViewModels;
+
 namespace UM_Consultation_App_MAUI;
 
 public partial class LoginPage : ContentPage
@@ -8,6 +10,7 @@ public partial class LoginPage : ContentPage
     public LoginPage()
 	{
 		InitializeComponent();
+        BindingContext = new LoginViewModel(Navigation);
 	}
     private void TogglePasswordVisibility(object sender, EventArgs e)
     {

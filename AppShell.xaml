@@ -7,6 +7,11 @@
     xmlns:facultyview="clr-namespace:UM_Consultation_App_MAUI.Views.FacultyView"
     xmlns:common="clr-namespace:UM_Consultation_App_MAUI.Views.Common"
     xmlns:local="clr-namespace:UM_Consultation_App_MAUI"
+    Shell.TabBarBackgroundColor="GhostWhite"
+    Shell.TabBarForegroundColor="#b61c1c"
+    Shell.TabBarTitleColor="#b61c1c"
+    Shell.TabBarUnselectedColor="Black"
+    Shell.TabBarDisabledColor="#cccccc"
     Shell.FlyoutBehavior="Disabled"
     Title="UM_Consultation_App_MAUI">
 
