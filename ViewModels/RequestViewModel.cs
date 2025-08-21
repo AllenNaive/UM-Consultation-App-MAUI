@@ -1,4 +1,6 @@
 ﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
+using UM_Consultation_App_MAUI.Views.StudentView;
 
 namespace UM_Consultation_App_MAUI.ViewModels
 {
@@ -12,6 +14,8 @@ namespace UM_Consultation_App_MAUI.ViewModels
     {
         public ObservableCollection<Request> Requests { get; set; }
 
+        public ICommand RequestConsultationCommand { get; }
+
         public RequestViewModel()
         {
             Requests = new ObservableCollection<Request>
@@ -21,7 +25,12 @@ namespace UM_Consultation_App_MAUI.ViewModels
                 new Request { Code = 1010, Course = "CPE 101", Instructor = "Nate Smog" },
                 new Request { Code = 1010, Course = "PAHF 4", Instructor = "Eva Adam" }
             };
-
+            RequestConsultationCommand = new Command(OnRequestConsultation);
+        }
+        //logic for handling the request consultation command
+        private async void OnRequestConsultation()
+        {
+            await Shell.Current.GoToAsync("///RequestConsultationPage");
         }
     }
 }

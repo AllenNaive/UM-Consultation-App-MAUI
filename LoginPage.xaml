@@ -30,32 +30,66 @@
                HorizontalOptions="Center"
                Margin="0,80,0,0" />
         <!-- Email -->
-        <Frame CornerRadius="30" BorderColor="Transparent" BackgroundColor="#eeeeee"
-               HeightRequest="78" WidthRequest="320">
-            <Entry Placeholder="Faculty or Student Email"
-                   BackgroundColor="Transparent"
-                   />
+        <Frame 
+            CornerRadius="30" BorderColor="GhostWhite" Padding="0" HeightRequest="78"
+            HasShadow="True" BackgroundColor="GhostWhite" WidthRequest="320">
+
+            <Grid ColumnSpacing="10" Padding="15">
+                <Image 
+                    Source="email_icon.png" VerticalOptions="Center" WidthRequest="25"
+                    HeightRequest="25" Grid.Column="0" />
+
+                <Entry 
+                    x:Name="txtboxEmail"
+                    Placeholder="UM Email"
+                    BackgroundColor="Transparent"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    PlaceholderColor="Gray"
+                    Grid.Column="1"
+                    Visual="Default"/>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
         </Frame>
 
 
         <!-- Password -->
-        <Frame CornerRadius="30" BorderColor="Transparent" BackgroundColor="#eeeeee"
-               HeightRequest="78" WidthRequest="320">
-            <HorizontalStackLayout>
-                <Entry x:Name="PasswordEntry"
-                       Placeholder="Password"
-                       IsPassword="True"
-                       BackgroundColor="Transparent"
-                       WidthRequest="279" />
-                <ImageButton x:Name="TogglePasswordButton"
-                             Source="eyeclosed.png"
-                             BackgroundColor="Transparent"
-                             WidthRequest="25"
-                             HeightRequest="25"
-                             Clicked="OnTogglePasswordClicked"/>
-                <!-- <ImageButton Source="eyeopen.png" WidthRequest="25" HeightRequest="25" /> -->
-                <!--wala pay image source dri-->
-            </HorizontalStackLayout>
+        <Frame 
+            CornerRadius="30" BorderColor="GhostWhite" Padding="0" HeightRequest="78" 
+            WidthRequest="320" HasShadow="True" BackgroundColor="GhostWhite">
+
+            <Grid ColumnSpacing="10" Padding="15">
+
+                <Image 
+                    Source="password_icon.png" VerticalOptions="Center"
+                    WidthRequest="25" HeightRequest="25"
+                    Grid.Column="0" />
+
+                <Entry 
+                    x:Name="txtboxPassword" FontAttributes="Bold"
+                    IsPassword="True" Placeholder="Password"
+                    BackgroundColor="Transparent" TextColor="Black"
+                    PlaceholderColor="Gray" Grid.Column="1"
+                    Visual="Default"/>
+
+                <ImageButton
+                    x:Name="btnPasswordEye" Source="eyeclosed.png"
+                    BackgroundColor="Transparent" WidthRequest="25"
+                    HeightRequest="25" HorizontalOptions="End"
+                    VerticalOptions="Center" Grid.Column="2"
+                    Clicked="TogglePasswordVisibility"/>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
         </Frame>
 
 

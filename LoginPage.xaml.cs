@@ -3,13 +3,16 @@ namespace UM_Consultation_App_MAUI;
 
 public partial class LoginPage : ContentPage
 {
-	public LoginPage()
+    bool isPasswordHidden = true;
+    bool isConfirmPasswordHidden = true;
+    public LoginPage()
 	{
 		InitializeComponent();
 	}
-    private void OnTogglePasswordClicked(object sender, EventArgs e)
+    private void TogglePasswordVisibility(object sender, EventArgs e)
     {
-        PasswordEntry.IsPassword = !PasswordEntry.IsPassword;
-        TogglePasswordButton.Source = PasswordEntry.IsPassword ? "eyeclosed.png" : "eyeopen.png";
+        isPasswordHidden = !isPasswordHidden;
+        txtboxPassword.IsPassword = isPasswordHidden;
+        btnPasswordEye.Source = isPasswordHidden ? "eyeclosed.png" : "eyeopen.png";
     }
 }

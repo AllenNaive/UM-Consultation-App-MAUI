@@ -35,12 +35,13 @@
 
             <!-- Request Consultation Button -->  
             <Button Text="Request Consultation"  
-                BackgroundColor="#b61c1c"  
-                TextColor="White"  
-                FontSize="18"  
-                CornerRadius="20"  
-                HeightRequest="50"  
-                WidthRequest="270"/>  
+                    BackgroundColor="#b61c1c"  
+                    TextColor="White"  
+                    FontSize="18"  
+                    CornerRadius="20"  
+                    HeightRequest="50"  
+                    WidthRequest="270"
+                    Command="{Binding RequestConsultationCommand}"/>  
 
             <!-- Courses View -->  
             <CollectionView ItemsSource="{Binding Requests}"  

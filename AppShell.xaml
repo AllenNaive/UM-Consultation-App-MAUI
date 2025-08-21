@@ -64,4 +64,11 @@
             ContentTemplate="{DataTemplate common:MenuPage}" />
     </TabBar>
 
+    <ShellContent
+        Title="Request Consultation"
+        Route="RequestConsultationPage"
+        ContentTemplate="{DataTemplate studentview:RequestConsultationPage}" />
+
+
+
 </Shell>
